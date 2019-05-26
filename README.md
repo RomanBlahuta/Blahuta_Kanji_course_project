@@ -22,20 +22,20 @@ Short Instructions
 --------------------------
 
 When you start the web-application, you will see several options:
-1) KanjiLearn Info - this is the page with basic information about the app, its developers and purpose.
+1. KanjiLearn Info - this is the page with basic information about the app, its developers and purpose.
 
-2) Kanji Learning List - this is the set of kanji that you can add while searching, add them manually by entering kanji characters in the text input or you can randomize your set with 10 random characters from inner database file with over 1000 kanji. The kanji learning test is based on this list of kanji. If your 'To Learn' list has less than 8 kanji, the game will not start.
+2. Kanji Learning List - this is the set of kanji that you can add while searching, add them manually by entering kanji characters in the text input or you can randomize your set with 10 random characters from inner database file with over 1000 kanji. The kanji learning test is based on this list of kanji. If your 'To Learn' list has less than 8 kanji, the game will not start.
 
-3)Learn Hiragana - this is a test/game where you will be asked 10 random questions about hiragana characters. You can open the hiragana characters table there too.
+3. Learn Hiragana - this is a test/game where you will be asked 10 random questions about hiragana characters. You can open the hiragana characters table there too.
 
-4) Learn Katakana - this test is the same as hiragana test but it is based around katakana characters instead, not hiragana characters.
+4. Learn Katakana - this test is the same as hiragana test but it is based around katakana characters instead, not hiragana characters.
 
-5) Learn Both Kana - this test will ask you questions about hiragana AND katakana. Learn two kana at the same time!
+5. Learn Both Kana - this test will ask you questions about hiragana AND katakana. Learn two kana at the same time!
 
-6)Search Kanji - you can search kanji with either english words or kanji characters themselves(if you just have a character you want some info about)! Just be sure to choose the correct searching option! If you input an incorrect value or the kanji is not present in databases the app uses, you will get an ERROR template. When the kanji is found you can add it to your learning list if you want. 
+6. Search Kanji - you can search kanji with either english words or kanji characters themselves(if you just have a character you want some info about)! Just be sure to choose the correct searching option! If you input an incorrect value or the kanji is not present in databases the app uses, you will get an ERROR template. When the kanji is found you can add it to your learning list if you want. 
 NOTE: enter one word at a time!!!!!
 
-7) Learn Kanji - a test/game that is based on your 'To Learn List'! If your list of kanji has less than 8 characters you will get a message that your list is too short and the test will not start.
+7. Learn Kanji - a test/game that is based on your 'To Learn List'! If your list of kanji has less than 8 characters you will get a message that your list is too short and the test will not start.
 
 At the end of each test/game you will get a response depending on your result. Each test has 10 question limit. You will get your response and results after you finish the test. You will be informed which questions were answered incorrectly and which ones were answered actually correctly.
 
