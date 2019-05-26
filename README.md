@@ -14,8 +14,8 @@ This application offers a big variety of information about three japanese script
 Not only can the user search the hieroglyphs but also learn them through playing minigames designed for this very reason.
 The user can switch between various gamemodes and the very important principal of learning kanji is not to just memorise the pattern but to understand it, learning and memorising radicals in other words.
 
-This application also offers basic info on its root page for people who decided to learn this fascinating language just recently.
-The basic information will include terms, usage of japanese scripts, app instructions and tutorials and much more than that.
+This application also offers basic info on its test pages for people who decided to learn this fascinating language just recently.
+The basic information will include terms, usage of japanese scripts, some instructions and much more than that.
 
 --------------------------
 Short Instructions
