@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block infor %}
+    <h1>  </h1>
+    <h2>✧･ﾟ: *✧･ﾟ:*  Search Kanji!  *:･ﾟ✧*:･ﾟ✧</h2>
+    <h3>Here you can look for many basic kanji and their details. Plaese enter just one word at a time.<br/>
+    You can input an English word to get a kanji with this meaning and all its details<br/><br/>
+    ✧Note: not all kanji may be available for searching.✧</h3>
+    <form action="/searchE" method="post">
+        ✧✧Enter an English word✧✧ <br/><br/>
+        <input type="text" name="search" class="strip"><br>
+        <input type="submit" name="search" value="Search with English" />
+    </form>
+{% endblock infor %}

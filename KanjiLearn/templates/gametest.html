@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block infor %}
+        <h1> </h1>
+        <h2>Question #{{ num }}</h2>
+        <h3>{{ question }}</h3>
+        <form action="/learn" method="post">
+
+        {% if answer1 != 404 %}
+        <input type="submit" name="submit_button" class="answer" value="{{ answer1 }}">
+        {% endif %}
+
+        {% if answer2 != 404 %}
+        <input type="submit" name="submit_button" class="answer" value="{{ answer2 }}">
+        {% endif %}
+
+        {% if answer3 != 404 %}
+        <input type="submit" name="submit_button" class="answer" value="{{ answer3 }}">
+        {% endif %}
+
+        {% if answer4 != 404 %}
+        <input type="submit" name="submit_button" class="answer" value="{{ answer4 }}">
+        {% endif %}
+
+        </form>
+{% endblock infor %}
+

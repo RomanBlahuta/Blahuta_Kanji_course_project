@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>modules package &#8212; KanjiLearn v.01 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="modules-package">
+<h1>modules package<a class="headerlink" href="#modules-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-modules.arrays">
+<span id="modules-arrays-module"></span><h2>modules.arrays module<a class="headerlink" href="#module-modules.arrays" title="Permalink to this headline">¶</a></h2>
+<p>File: arrays.py</p>
+<p>An Array is a restricted list whose clients can use
+only [], len, iter, and str.</p>
+<p>To instantiate, use</p>
+<p>&lt;variable&gt; = array(&lt;capacity&gt;, &lt;optional fill value&gt;)</p>
+<p>The fill value is None by default.</p>
+<dl class="class">
+<dt id="modules.arrays.Array">
+<em class="property">class </em><code class="descclassname">modules.arrays.</code><code class="descname">Array</code><span class="sig-paren">(</span><em>capacity</em>, <em>fillValue=None</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.arrays.Array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents an array.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="modules.arrays.ArrayExpanded">
+<em class="property">class </em><code class="descclassname">modules.arrays.</code><code class="descname">ArrayExpanded</code><span class="sig-paren">(</span><em>capacity</em>, <em>fillValue=None</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.arrays.ArrayExpanded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents an array.</p>
+<dl class="method">
+<dt id="modules.arrays.ArrayExpanded.grow">
+<code class="descname">grow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.arrays.ArrayExpanded.grow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increases the physical size of the array if necessary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.arrays.ArrayExpanded.insert">
+<code class="descname">insert</code><span class="sig-paren">(</span><em>index</em>, <em>newItem</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.arrays.ArrayExpanded.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts item at index in the array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.arrays.ArrayExpanded.pop">
+<code class="descname">pop</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.arrays.ArrayExpanded.pop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes and returns item at index in the array.
+Precondition: 0 &lt;= index &lt; size()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.arrays.ArrayExpanded.shrink">
+<code class="descname">shrink</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.arrays.ArrayExpanded.shrink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decreases the physical size of the array if necessary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.arrays.ArrayExpanded.size">
+<code class="descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.arrays.ArrayExpanded.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>-&gt; The number of items in the array.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-modules.kanachar">
+<span id="modules-kanachar-module"></span><h2>modules.kanachar module<a class="headerlink" href="#module-modules.kanachar" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="modules.kanachar.KanaChar">
+<em class="property">class </em><code class="descclassname">modules.kanachar.</code><code class="descname">KanaChar</code><span class="sig-paren">(</span><em>char</em>, <em>sound</em>, <em>kana</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanachar.KanaChar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for representation of hiragana and katakana characters
+with their sounds, characters and kana values.</p>
+<dl class="method">
+<dt id="modules.kanachar.KanaChar.consonant">
+<code class="descname">consonant</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanachar.KanaChar.consonant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the consonant of the character sound.
+Example: gets ‘ka’ -&gt; returns ‘k’
+:return: str</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.kanachar.KanaChar.vowel">
+<code class="descname">vowel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanachar.KanaChar.vowel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns vowel of the character sound.
+Example: gets ‘ka’ -&gt; returns ‘a’
+:return: str</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-modules.kanaset">
+<span id="modules-kanaset-module"></span><h2>modules.kanaset module<a class="headerlink" href="#module-modules.kanaset" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="modules.kanaset.KanaSet">
+<em class="property">class </em><code class="descclassname">modules.kanaset.</code><code class="descname">KanaSet</code><span class="sig-paren">(</span><em>chars</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanaset.KanaSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Data structure based on ArrayExpanded data structure.
+Is used for working with KanaChar objects and their storage</p>
+<dl class="method">
+<dt id="modules.kanaset.KanaSet.charBySound">
+<code class="descname">charBySound</code><span class="sig-paren">(</span><em>snd</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanaset.KanaSet.charBySound" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a KanaChar with corresponding sound value.
+:param sound: str
+:return:KanaChar</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.kanaset.KanaSet.getRandom">
+<code class="descname">getRandom</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanaset.KanaSet.getRandom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a random character from the KanaSet.
+:return: KanaChar</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.kanaset.KanaSet.itemCount">
+<code class="descname">itemCount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanaset.KanaSet.itemCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the amount of items, not the actual length.
+:return: int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.kanaset.KanaSet.sameConsonant">
+<code class="descname">sameConsonant</code><span class="sig-paren">(</span><em>cons</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanaset.KanaSet.sameConsonant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list of all KanaChar objects with corresponding consonant.
+:param cons: str
+:return: list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.kanaset.KanaSet.sameVowel">
+<code class="descname">sameVowel</code><span class="sig-paren">(</span><em>vow</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanaset.KanaSet.sameVowel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list of all KanaChar objects with corresponding vowel.
+:param vow: str
+:return: list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.kanaset.KanaSet.soundByChar">
+<code class="descname">soundByChar</code><span class="sig-paren">(</span><em>chr</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanaset.KanaSet.soundByChar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a sound str value of KanaChar with
+corresponding character value.
+:param chr: str
+:return: str</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="modules.kanaset.kanaSetUp">
+<code class="descclassname">modules.kanaset.</code><code class="descname">kanaSetUp</code><span class="sig-paren">(</span><em>file</em>, <em>kanabool</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanaset.kanaSetUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up a KanaSet structure with data
+from a json file as KanaChar objects.</p>
+<p>Works with json files structured like
+hiragana.json and katakana.json:
+{“alphabet”: [
+{</p>
+<blockquote>
+<div><p>“char_id”: “a”,
+“character”: “あ”,
+“romanization”: “a”</p>
+</div></blockquote>
+<p>},
+{
+…
+:param file: str
+:param kanabool: bool(True - hiragana, False - katakana)
+:return: KanaSet</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-modules.kanjiclass">
+<span id="modules-kanjiclass-module"></span><h2>modules.kanjiclass module<a class="headerlink" href="#module-modules.kanjiclass" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="modules.kanjiclass.Kanji">
+<em class="property">class </em><code class="descclassname">modules.kanjiclass.</code><code class="descname">Kanji</code><span class="sig-paren">(</span><em>character</em>, <em>meanings</em>, <em>readings</em>, <em>parts_of_speech</em>, <em>radical</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiclass.Kanji" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for representation of a kanji character with all its information
+like the character itself, meanings, readings, which part of speech it is, its radicals.</p>
+<dl class="method">
+<dt id="modules.kanjiclass.Kanji.commonRadical">
+<code class="descname">commonRadical</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiclass.Kanji.commonRadical" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests if two Kanji objects have the same radical
+and returns corresponing bool value.
+:param other: Kanji
+:return: bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.kanjiclass.Kanji.commonSpeechPart">
+<code class="descname">commonSpeechPart</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiclass.Kanji.commonSpeechPart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests if two radicals are the same part of speech
+and gives corresponding bool value.
+:param other: Kanji
+:return: bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.kanjiclass.Kanji.getKunyomi">
+<code class="descname">getKunyomi</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiclass.Kanji.getKunyomi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns hiragana symbols of kunyomi reading of the kanji.
+:return: str</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="modules.kanjiclass.Kanji.getOnyomi">
+<code class="descname">getOnyomi</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiclass.Kanji.getOnyomi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns katakana symbols of onyomi reading of the kanji.
+:return: str</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-modules.kanjiget">
+<span id="modules-kanjiget-module"></span><h2>modules.kanjiget module<a class="headerlink" href="#module-modules.kanjiget" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="modules.kanjiget.kanjiGetEng">
+<code class="descclassname">modules.kanjiget.</code><code class="descname">kanjiGetEng</code><span class="sig-paren">(</span><em>word</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiget.kanjiGetEng" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets an English word as an argument.
+Constructs a Kanji object based on data gathered
+from Kanji Alive API and Jisho.org API.
+:param kanji: str
+:return: Kanji</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="modules.kanjiget.kanjiGetJap">
+<code class="descclassname">modules.kanjiget.</code><code class="descname">kanjiGetJap</code><span class="sig-paren">(</span><em>kanji</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiget.kanjiGetJap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a kanji character as an argument.
+Constructs a Kanji object based on data gathered
+from Kanji Alive API and Jisho.org API.
+:param kanji: str
+:return: Kanji</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="modules.kanjiget.kanjiGet_J">
+<code class="descclassname">modules.kanjiget.</code><code class="descname">kanjiGet_J</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiget.kanjiGet_J" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helping function.
+Gets an API link for request.
+Returns json info about kanji from Jisho.org API.
+:param url: str
+:return: dict</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="modules.kanjiget.kanjiGet_KA">
+<code class="descclassname">modules.kanjiget.</code><code class="descname">kanjiGet_KA</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiget.kanjiGet_KA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helping function.
+Gets an API link for request.
+Returns json info about kanji from Kanji Alive app database.
+:param url: str
+:return: dict</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-modules.kanjiset">
+<span id="modules-kanjiset-module"></span><h2>modules.kanjiset module<a class="headerlink" href="#module-modules.kanjiset" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="modules.kanjiset.KanjiSet">
+<em class="property">class </em><code class="descclassname">modules.kanjiset.</code><code class="descname">KanjiSet</code><span class="sig-paren">(</span><em>kanjis=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiset.KanjiSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Data structure for containing Kanji objects and working with them.
+Based on ArrayExpanded data structure</p>
+<dl class="method">
+<dt id="modules.kanjiset.KanjiSet.getRandom">
+<code class="descname">getRandom</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.kanjiset.KanjiSet.getRandom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a random kanji from the KanjiSet.
+:return: Kanji object</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-modules">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-modules" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">KanjiLearn</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Blahuta.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/source/rst/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

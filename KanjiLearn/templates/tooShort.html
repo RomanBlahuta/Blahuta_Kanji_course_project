@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../static/KanjiApp.jpg">
+<title>KanjiLearn</title>
+</head>
+
+<style>
+      html {
+    background: url(../static/fuji2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+      h1 {
+        font-size: 100px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 40px;
+        text-align: center;
+        color: red;
+      }
+      h3 {
+          font-size: 30px;
+          text-align: center;
+          color: red;
+      }
+      form {
+        font-size: 22px;
+        text-align: center;
+        color: #0e6655;
+      }
+      input{
+          width: 60em;
+          height: 6em;
+          color: red;
+      }
+</style>
+
+<body>
+    <h1> </h1>
+    <h2>(✖╭╮✖)(✖╭╮✖)  OH NO!  (✖╭╮✖)(✖╭╮✖)</h2>
+    <h3>(◞ ‸ ◟)<br/><br/>✖✖✖ YOUR LEARNING LIST IS TOO SHORT! ✖✖✖<br/>MINIMAL AMOUNT OF KANJI IS 8<br/>
+        YOUR LIST HAS ONLY {{ length }} KANJI<br/><br/>(◞ ‸ ◟)</h3>
+</body>
+<form action="/list">
+        <input type="submit" value="Edit List" />
+      </form>
+</html>

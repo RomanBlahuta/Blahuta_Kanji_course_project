@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block infor %}
+      <h1> </h1>
+      <h2>	(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧  Let's learn Katakana!  	(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h2>
+      <h3>This game will help you learn basics about katakana!</h3>
+    <h4>Katakana (片仮名, かたかな, カタカナ, Japanese pronunciation: [katakana]) is a Japanese syllabary,<br/>
+        one component of the Japanese writing system along with hiragana,[2] kanji and in some cases the Latin<br/>
+        script (known as rōmaji). The word katakana means "fragmentary kana", as the katakana characters are derived<br/>
+        from components or fragments of more complex kanji.With one or two minor exceptions, each syllable (strictly mora)<br/>
+        in the Japanese language is represented by one character or kana, in each system. Each kana represents either a vowel such<br/>
+        as "a" (katakana ア); a consonant followed by a vowel such as "ka" (katakana カ); or "n" (katakana ン), a nasal sonorant <br/>
+        which, depending on the context, sounds either like English m, n or ng ([ŋ]). It is used for transcription of foreign <br/>
+        language words and the writing of loan words; for emphasis; for technical and scientific terms; and for names of <br/>
+        plants, animals, minerals and Japanese companies. Katakana are characterized by short, straight strokes and sharp corners.<br/>
+        The complete katakana script consists of 48 characters, not counting functional and diacritic marks: <br/><br/>
+        nucleus vowels<br/>
+        42 core or body syllabograms, consisting of nine consonants with the five vowels, of which yi, ye, wu are not canonical
+        <br/>1 coda consonant<br/>
+    </h4>
+      <form action="/katakana_table">
+        <input type="submit" value="Katakana Table" />
+      </form>
+      <form action="/kstart">
+        <input type="submit" value="Learn Katakana!" />
+      </form>
+      <form action="/">
+        <input type="submit" value="Home page" />
+      </form>
+{% endblock infor %}

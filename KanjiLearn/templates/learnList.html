@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block infor %}
+    <h1> </h1>
+    <h2>This is your "To Learn" list!<br/>°˖✧◝(⁰ヮ⁰)◜✧˖°</h2>
+    <h3>The kanji learning game is based on this set of kanji. Processing a lot of kanji may take a while...<br/>
+        You can add kanji while searching, or you can input the characters down below.<br/>
+        If character is not present in database it will be skipped. You can also randomize<br/>
+        your list with common kanji from the file in the app which are all present in the database.<br/>
+        Your list of kanji to learn:<br/>{{ kanjiList }}</h3>
+    <form action="/list" method="POST">
+        ✧✧✧ <input type="text" name="newList" class="tolearn"> ✧✧✧<br/><br/>
+        <input type="submit" name="editlist" value="Submit new list" /><br/>
+        <input type="submit" name="editlist" value="Randomize" />
+      </form>
+    <br/>
+    <form action="/">
+        <input type="submit" value="Home page" />
+      </form>
+    <h6> ★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★</h6>
+{% endblock infor %}

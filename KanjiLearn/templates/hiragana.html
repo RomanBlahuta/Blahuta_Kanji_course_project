@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block infor %}
+      <h1> </h1>
+      <h2>	(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧  Let's learn Hiragana!  	(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h2>
+      <h3>This game will help you learn basics about hiragana!</h3>
+    <h4>Hiragana (平仮名, ひらがな, Japanese pronunciation: [çiɾaɡana]) is a Japanese syllabary, one component <br/>
+        of the Japanese writing system, along with katakana, kanji, and in some cases rōmaji (Latin script). <br/>
+        It is a phonetic lettering system. The word hiragana literally means "ordinary" or "simple" <br/>
+        kana ("simple" originally as contrasted with kanji). The modern hiragana syllabary consists of 46 base characters:<br/>
+        <br/>
+        5 singular vowels<br/>
+        40 consonant–vowel unions<br/>
+        1 singular consonant<br/>
+        <br/>
+        These are conceived as a 5×10 grid (gojūon, 五十音, "Fifty Sounds"), as illustrated in <br/>
+        the adjacent table, read あ (a), い (i), う (u), え (e), お (o), か (ka), き (ki), く (ku), け (ke), こ (ko) and <br/>
+        so forth, with the singular consonant ん (n) appended to the end. Of the 50 theoretically <br/>
+        possible combinations, yi and wu do not exist in the language, and ye, wi and we are obsolete<br/>
+        in modern Japanese. wo is usually pronounced as a vowel (o) in modern Japanese, and is used only as a particle. </h4>
+      <form action="/hiragana_table">
+        <input type="submit" value="Hiragana Table" />
+      </form>
+      <form action="/hstart">
+        <input type="submit" value="Learn Hiragana!" />
+      </form>
+      <form action="/">
+        <input type="submit" value="Home page" />
+      </form>
+{% endblock infor %}

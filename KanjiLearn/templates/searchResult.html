@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block infor %}
+    <h1>  </h1>
+    <h2>☆ﾟ･:*:･｡,★ﾟ･:*:･｡  Search Result  ｡･:*:･ﾟ★,｡･:*:･ﾟ☆</h2>
+    <h3>
+        ☆☆☆★★★★★★★★★★★★★★★★★★★★★★★★☆☆☆<br/>
+        Kanji: {{ character }} <br/><br/>
+        Meanings: {{ meanings }}
+    </h3>{% for read in readings %}<h3>Reading:  {{ read }}</h3>{% endfor %}
+
+    <h3>Parts of speech: {{ parts_of_speech }} <br/><br/>
+        Radicals: {{ radical }} <br/>
+        ☆☆☆★★★★★★★★★★★★★★★★★★★★★★★★☆☆☆
+    </h3>
+    <form action="/list" method="post">
+        <input type="submit" name="editlist" value="Add to List" />
+    </form>
+    <form action="/">
+        <input type="submit" value="Home page" />
+    </form>
+{% endblock infor %}

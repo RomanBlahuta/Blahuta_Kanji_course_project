@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block infor %}
+      <h1> </h1>
+      <h2>	(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧  Let's learn Both Kanas!  (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h2>
+      <h3>This game will help you learn basics about hiragana AND katakana!</h3>
+    <h4>If you feel like you are ready to take on a bigger challenge, then <br/>
+        you can learn hiragana and katakana simultaneously!<br/>
+    ▒▒▓█▇▅▂✧ \(◕ヮ◕)/ ✧▂▅▇█▓▒▒</h4>
+      <form action="/hiragana_table">
+        <input type="submit" value="Hiragana Table" />
+      </form>
+      <form action="/katakana_table">
+        <input type="submit" value="Katakana Table" />
+      </form>
+      <form action="/twostart">
+        <input type="submit" value="Learn Both Kana!" />
+      </form>
+      <form action="/">
+        <input type="submit" value="Home page" />
+      </form>
+{% endblock infor %}

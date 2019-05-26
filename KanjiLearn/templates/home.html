@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block infor %}
+      <h1> </h1>
+      <h2>Welcome to KanjiLearn!<br/>°˖✧◝(⁰ヮ⁰)◜✧˖°</h2>
+      <h3>This web application will help you learn basics about hiragana katakana and kanji!<br/>
+    Check the "KanjiLearn Info" page for information. Good luck!</h3>
+      <form action="/info">
+        ★  <input type="submit" value="KanjiLearn Info"/>  ★
+      </form>
+    <form action="/list">
+        ★  <input type="submit" value="Kanji Learning List"/>  ★
+      </form>
+    <form action="/hiragana">
+        ★  <input type="submit" value="Learn Hiragana"/>  ★
+      </form>
+      <form action="/katakana">
+        ★  <input type="submit" value="Learn Katakana"/>  ★
+      </form>
+      <form action="/twokanas">
+        ★  <input type="submit" value="Learn Both Kana"/>  ★
+      </form>
+      <form action="/search">
+        ★  <input type="submit" value="Search Kanji"/>  ★
+      </form>
+      <form action="/kanjistart">
+        ★  <input type="submit" value="Learn Kanji"/>  ★
+      </form>
+
+    <h6>  ★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★【☆】★</h6>
+{% endblock infor %}
